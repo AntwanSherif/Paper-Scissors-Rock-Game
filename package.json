@@ -1,5 +1,11 @@
 {
   "name": "paper-scissors-rock",
+  "description": "Paper-Scissors-Rock game built with React & TailwindCSS",
+  "author": {
+    "name": "Antwan Sherif",
+    "email": "antwansherif@gmail.com",
+    "url": "https://antwansherif.github.io/AntwanSherif/"
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
