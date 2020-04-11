@@ -126,7 +126,15 @@ module.exports = {
         900: '#702459',
       },
     },
-    radialGradientColors: theme => theme('colors'),
+    radialGradientSizes: {
+      'default': '',
+    },
+    radialGradientColors: {
+      'background': ['hsl(214, 47%, 23%)', 'hsl(237, 49%, 15%)'],
+      'paper': ['hsl(230, 89%, 62%)', 'hsl(230, 89%, 65%)'],
+      'scissors': ['hsl(39, 89%, 49%)', 'hsl(40, 84%, 53%)'],
+      'rock': ['hsl(349, 71%, 52%)', 'hsl(349, 70%, 56%)'],
+    },
     spacing: {
       px: '1px',
       '0': '0',
@@ -168,6 +176,7 @@ module.exports = {
     borderColor: theme => ({
       ...theme('colors'),
       default: theme('colors.gray.300', 'currentColor'),
+      header: 'hsl(217, 16%, 45%)'
     }),
     borderRadius: {
       none: '0',
@@ -175,6 +184,7 @@ module.exports = {
       default: '0.25rem',
       md: '0.375rem',
       lg: '0.5rem',
+      xl: '1rem',
       full: '9999px',
     },
     borderWidth: {
@@ -254,6 +264,7 @@ module.exports = {
       '4xl': '2.25rem',
       '5xl': '3rem',
       '6xl': '4rem',
+      '7xl': '5rem'
     },
     fontWeight: {
       hairline: '100',
@@ -269,6 +280,7 @@ module.exports = {
     height: theme => ({
       auto: 'auto',
       ...theme('spacing'),
+      44: '11rem',
       full: '100%',
       screen: '100vh',
     }),
@@ -383,10 +395,15 @@ module.exports = {
       '1': '1',
       '2': '2',
     },
-    textColor: theme => theme('colors'),
+    textColor: theme => ({
+      ...theme('colors'),
+      score: 'hsl(229, 64%, 46%)',
+      dark: 'hsl(229, 25%, 31%)'
+    }),
     width: theme => ({
       auto: 'auto',
       ...theme('spacing'),
+      '44': '11rem',
       '1/2': '50%',
       '1/3': '33.333333%',
       '2/3': '66.666667%',

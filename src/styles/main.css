@@ -578,6 +578,10 @@ video {
   height: auto;
 }
 
+body{
+  color: #fff;
+}
+
 .container {
   width: 100%;
 }
@@ -2238,6 +2242,10 @@ video {
   border-color: #702459;
 }
 
+.border-header {
+  border-color: hsl(217, 16%, 45%);
+}
+
 .hover\:border-transparent:hover {
   border-color: transparent;
 }
@@ -2608,6 +2616,10 @@ video {
 
 .hover\:border-pink-900:hover {
   border-color: #702459;
+}
+
+.hover\:border-header:hover {
+  border-color: hsl(217, 16%, 45%);
 }
 
 .focus\:border-transparent:focus {
@@ -2982,6 +2994,10 @@ video {
   border-color: #702459;
 }
 
+.focus\:border-header:focus {
+  border-color: hsl(217, 16%, 45%);
+}
+
 .rounded-none {
   border-radius: 0;
 }
@@ -3000,6 +3016,10 @@ video {
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 1rem;
 }
 
 .rounded-full {
@@ -3106,6 +3126,26 @@ video {
   border-bottom-left-radius: 0.5rem;
 }
 
+.rounded-t-xl {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.rounded-r-xl {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.rounded-b-xl {
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.rounded-l-xl {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
 .rounded-t-full {
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
@@ -3204,6 +3244,22 @@ video {
 
 .rounded-bl-lg {
   border-bottom-left-radius: 0.5rem;
+}
+
+.rounded-tl-xl {
+  border-top-left-radius: 1rem;
+}
+
+.rounded-tr-xl {
+  border-top-right-radius: 1rem;
+}
+
+.rounded-br-xl {
+  border-bottom-right-radius: 1rem;
+}
+
+.rounded-bl-xl {
+  border-bottom-left-radius: 1rem;
 }
 
 .rounded-tl-full {
@@ -3854,6 +3910,10 @@ video {
 
 .h-40 {
   height: 10rem;
+}
+
+.h-44 {
+  height: 11rem;
 }
 
 .h-48 {
@@ -7333,6 +7393,14 @@ video {
   color: #702459;
 }
 
+.text-score {
+  color: hsl(229, 64%, 46%);
+}
+
+.text-dark {
+  color: hsl(229, 25%, 31%);
+}
+
 .hover\:text-transparent:hover {
   color: transparent;
 }
@@ -7703,6 +7771,14 @@ video {
 
 .hover\:text-pink-900:hover {
   color: #702459;
+}
+
+.hover\:text-score:hover {
+  color: hsl(229, 64%, 46%);
+}
+
+.hover\:text-dark:hover {
+  color: hsl(229, 25%, 31%);
 }
 
 .focus\:text-transparent:focus {
@@ -8077,6 +8153,14 @@ video {
   color: #702459;
 }
 
+.focus\:text-score:focus {
+  color: hsl(229, 64%, 46%);
+}
+
+.focus\:text-dark:focus {
+  color: hsl(229, 25%, 31%);
+}
+
 .text-xs {
   font-size: 0.75rem;
 }
@@ -8115,6 +8199,10 @@ video {
 
 .text-6xl {
   font-size: 4rem;
+}
+
+.text-7xl {
+  font-size: 5rem;
 }
 
 .italic {
@@ -8360,6 +8448,10 @@ video {
 
 .w-40 {
   width: 10rem;
+}
+
+.w-44 {
+  width: 11rem;
 }
 
 .w-48 {
@@ -10912,6 +11004,154 @@ video {
   transition-duration: 1000ms;
 }
 
+.bg-none {
+  background-image: none;
+}
+
+.bg-radial-background {
+  background-image: radial-gradient(, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.bg-radial-t-background {
+  background-image: radial-gradient( at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.bg-radial-tr-background {
+  background-image: radial-gradient( at top right, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.bg-radial-r-background {
+  background-image: radial-gradient( at right, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.bg-radial-br-background {
+  background-image: radial-gradient( at bottom right, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.bg-radial-b-background {
+  background-image: radial-gradient( at bottom, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.bg-radial-bl-background {
+  background-image: radial-gradient( at bottom left, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.bg-radial-l-background {
+  background-image: radial-gradient( at left, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.bg-radial-tl-background {
+  background-image: radial-gradient( at top left, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.bg-radial-paper {
+  background-image: radial-gradient(, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+
+.bg-radial-t-paper {
+  background-image: radial-gradient( at top, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+
+.bg-radial-tr-paper {
+  background-image: radial-gradient( at top right, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+
+.bg-radial-r-paper {
+  background-image: radial-gradient( at right, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+
+.bg-radial-br-paper {
+  background-image: radial-gradient( at bottom right, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+
+.bg-radial-b-paper {
+  background-image: radial-gradient( at bottom, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+
+.bg-radial-bl-paper {
+  background-image: radial-gradient( at bottom left, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+
+.bg-radial-l-paper {
+  background-image: radial-gradient( at left, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+
+.bg-radial-tl-paper {
+  background-image: radial-gradient( at top left, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+
+.bg-radial-scissors {
+  background-image: radial-gradient(, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+
+.bg-radial-t-scissors {
+  background-image: radial-gradient( at top, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+
+.bg-radial-tr-scissors {
+  background-image: radial-gradient( at top right, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+
+.bg-radial-r-scissors {
+  background-image: radial-gradient( at right, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+
+.bg-radial-br-scissors {
+  background-image: radial-gradient( at bottom right, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+
+.bg-radial-b-scissors {
+  background-image: radial-gradient( at bottom, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+
+.bg-radial-bl-scissors {
+  background-image: radial-gradient( at bottom left, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+
+.bg-radial-l-scissors {
+  background-image: radial-gradient( at left, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+
+.bg-radial-tl-scissors {
+  background-image: radial-gradient( at top left, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+
+.bg-radial-rock {
+  background-image: radial-gradient(, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+
+.bg-radial-t-rock {
+  background-image: radial-gradient( at top, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+
+.bg-radial-tr-rock {
+  background-image: radial-gradient( at top right, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+
+.bg-radial-r-rock {
+  background-image: radial-gradient( at right, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+
+.bg-radial-br-rock {
+  background-image: radial-gradient( at bottom right, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+
+.bg-radial-b-rock {
+  background-image: radial-gradient( at bottom, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+
+.bg-radial-bl-rock {
+  background-image: radial-gradient( at bottom left, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+
+.bg-radial-l-rock {
+  background-image: radial-gradient( at left, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+
+.bg-radial-tl-rock {
+  background-image: radial-gradient( at top left, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
@@ -12545,6 +12785,10 @@ video {
     border-color: #702459;
   }
 
+  .sm\:border-header {
+    border-color: hsl(217, 16%, 45%);
+  }
+
   .sm\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -12915,6 +13159,10 @@ video {
 
   .sm\:hover\:border-pink-900:hover {
     border-color: #702459;
+  }
+
+  .sm\:hover\:border-header:hover {
+    border-color: hsl(217, 16%, 45%);
   }
 
   .sm\:focus\:border-transparent:focus {
@@ -13289,6 +13537,10 @@ video {
     border-color: #702459;
   }
 
+  .sm\:focus\:border-header:focus {
+    border-color: hsl(217, 16%, 45%);
+  }
+
   .sm\:rounded-none {
     border-radius: 0;
   }
@@ -13307,6 +13559,10 @@ video {
 
   .sm\:rounded-lg {
     border-radius: 0.5rem;
+  }
+
+  .sm\:rounded-xl {
+    border-radius: 1rem;
   }
 
   .sm\:rounded-full {
@@ -13413,6 +13669,26 @@ video {
     border-bottom-left-radius: 0.5rem;
   }
 
+  .sm\:rounded-t-xl {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .sm\:rounded-r-xl {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  .sm\:rounded-b-xl {
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .sm\:rounded-l-xl {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
   .sm\:rounded-t-full {
     border-top-left-radius: 9999px;
     border-top-right-radius: 9999px;
@@ -13511,6 +13787,22 @@ video {
 
   .sm\:rounded-bl-lg {
     border-bottom-left-radius: 0.5rem;
+  }
+
+  .sm\:rounded-tl-xl {
+    border-top-left-radius: 1rem;
+  }
+
+  .sm\:rounded-tr-xl {
+    border-top-right-radius: 1rem;
+  }
+
+  .sm\:rounded-br-xl {
+    border-bottom-right-radius: 1rem;
+  }
+
+  .sm\:rounded-bl-xl {
+    border-bottom-left-radius: 1rem;
   }
 
   .sm\:rounded-tl-full {
@@ -14161,6 +14453,10 @@ video {
 
   .sm\:h-40 {
     height: 10rem;
+  }
+
+  .sm\:h-44 {
+    height: 11rem;
   }
 
   .sm\:h-48 {
@@ -17640,6 +17936,14 @@ video {
     color: #702459;
   }
 
+  .sm\:text-score {
+    color: hsl(229, 64%, 46%);
+  }
+
+  .sm\:text-dark {
+    color: hsl(229, 25%, 31%);
+  }
+
   .sm\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -18010,6 +18314,14 @@ video {
 
   .sm\:hover\:text-pink-900:hover {
     color: #702459;
+  }
+
+  .sm\:hover\:text-score:hover {
+    color: hsl(229, 64%, 46%);
+  }
+
+  .sm\:hover\:text-dark:hover {
+    color: hsl(229, 25%, 31%);
   }
 
   .sm\:focus\:text-transparent:focus {
@@ -18384,6 +18696,14 @@ video {
     color: #702459;
   }
 
+  .sm\:focus\:text-score:focus {
+    color: hsl(229, 64%, 46%);
+  }
+
+  .sm\:focus\:text-dark:focus {
+    color: hsl(229, 25%, 31%);
+  }
+
   .sm\:text-xs {
     font-size: 0.75rem;
   }
@@ -18422,6 +18742,10 @@ video {
 
   .sm\:text-6xl {
     font-size: 4rem;
+  }
+
+  .sm\:text-7xl {
+    font-size: 5rem;
   }
 
   .sm\:italic {
@@ -18667,6 +18991,10 @@ video {
 
   .sm\:w-40 {
     width: 10rem;
+  }
+
+  .sm\:w-44 {
+    width: 11rem;
   }
 
   .sm\:w-48 {
@@ -21218,6 +21546,154 @@ video {
   .sm\:duration-1000 {
     transition-duration: 1000ms;
   }
+
+  .sm\:bg-none {
+    background-image: none;
+  }
+
+  .sm\:bg-radial-background {
+    background-image: radial-gradient(, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .sm\:bg-radial-t-background {
+    background-image: radial-gradient( at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .sm\:bg-radial-tr-background {
+    background-image: radial-gradient( at top right, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .sm\:bg-radial-r-background {
+    background-image: radial-gradient( at right, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .sm\:bg-radial-br-background {
+    background-image: radial-gradient( at bottom right, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .sm\:bg-radial-b-background {
+    background-image: radial-gradient( at bottom, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .sm\:bg-radial-bl-background {
+    background-image: radial-gradient( at bottom left, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .sm\:bg-radial-l-background {
+    background-image: radial-gradient( at left, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .sm\:bg-radial-tl-background {
+    background-image: radial-gradient( at top left, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .sm\:bg-radial-paper {
+    background-image: radial-gradient(, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .sm\:bg-radial-t-paper {
+    background-image: radial-gradient( at top, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .sm\:bg-radial-tr-paper {
+    background-image: radial-gradient( at top right, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .sm\:bg-radial-r-paper {
+    background-image: radial-gradient( at right, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .sm\:bg-radial-br-paper {
+    background-image: radial-gradient( at bottom right, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .sm\:bg-radial-b-paper {
+    background-image: radial-gradient( at bottom, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .sm\:bg-radial-bl-paper {
+    background-image: radial-gradient( at bottom left, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .sm\:bg-radial-l-paper {
+    background-image: radial-gradient( at left, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .sm\:bg-radial-tl-paper {
+    background-image: radial-gradient( at top left, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .sm\:bg-radial-scissors {
+    background-image: radial-gradient(, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .sm\:bg-radial-t-scissors {
+    background-image: radial-gradient( at top, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .sm\:bg-radial-tr-scissors {
+    background-image: radial-gradient( at top right, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .sm\:bg-radial-r-scissors {
+    background-image: radial-gradient( at right, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .sm\:bg-radial-br-scissors {
+    background-image: radial-gradient( at bottom right, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .sm\:bg-radial-b-scissors {
+    background-image: radial-gradient( at bottom, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .sm\:bg-radial-bl-scissors {
+    background-image: radial-gradient( at bottom left, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .sm\:bg-radial-l-scissors {
+    background-image: radial-gradient( at left, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .sm\:bg-radial-tl-scissors {
+    background-image: radial-gradient( at top left, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .sm\:bg-radial-rock {
+    background-image: radial-gradient(, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .sm\:bg-radial-t-rock {
+    background-image: radial-gradient( at top, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .sm\:bg-radial-tr-rock {
+    background-image: radial-gradient( at top right, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .sm\:bg-radial-r-rock {
+    background-image: radial-gradient( at right, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .sm\:bg-radial-br-rock {
+    background-image: radial-gradient( at bottom right, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .sm\:bg-radial-b-rock {
+    background-image: radial-gradient( at bottom, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .sm\:bg-radial-bl-rock {
+    background-image: radial-gradient( at bottom left, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .sm\:bg-radial-l-rock {
+    background-image: radial-gradient( at left, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .sm\:bg-radial-tl-rock {
+    background-image: radial-gradient( at top left, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
 }
 
 @media (min-width: 768px) {
@@ -22853,6 +23329,10 @@ video {
     border-color: #702459;
   }
 
+  .md\:border-header {
+    border-color: hsl(217, 16%, 45%);
+  }
+
   .md\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -23223,6 +23703,10 @@ video {
 
   .md\:hover\:border-pink-900:hover {
     border-color: #702459;
+  }
+
+  .md\:hover\:border-header:hover {
+    border-color: hsl(217, 16%, 45%);
   }
 
   .md\:focus\:border-transparent:focus {
@@ -23597,6 +24081,10 @@ video {
     border-color: #702459;
   }
 
+  .md\:focus\:border-header:focus {
+    border-color: hsl(217, 16%, 45%);
+  }
+
   .md\:rounded-none {
     border-radius: 0;
   }
@@ -23615,6 +24103,10 @@ video {
 
   .md\:rounded-lg {
     border-radius: 0.5rem;
+  }
+
+  .md\:rounded-xl {
+    border-radius: 1rem;
   }
 
   .md\:rounded-full {
@@ -23721,6 +24213,26 @@ video {
     border-bottom-left-radius: 0.5rem;
   }
 
+  .md\:rounded-t-xl {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .md\:rounded-r-xl {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  .md\:rounded-b-xl {
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .md\:rounded-l-xl {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
   .md\:rounded-t-full {
     border-top-left-radius: 9999px;
     border-top-right-radius: 9999px;
@@ -23819,6 +24331,22 @@ video {
 
   .md\:rounded-bl-lg {
     border-bottom-left-radius: 0.5rem;
+  }
+
+  .md\:rounded-tl-xl {
+    border-top-left-radius: 1rem;
+  }
+
+  .md\:rounded-tr-xl {
+    border-top-right-radius: 1rem;
+  }
+
+  .md\:rounded-br-xl {
+    border-bottom-right-radius: 1rem;
+  }
+
+  .md\:rounded-bl-xl {
+    border-bottom-left-radius: 1rem;
   }
 
   .md\:rounded-tl-full {
@@ -24469,6 +24997,10 @@ video {
 
   .md\:h-40 {
     height: 10rem;
+  }
+
+  .md\:h-44 {
+    height: 11rem;
   }
 
   .md\:h-48 {
@@ -27948,6 +28480,14 @@ video {
     color: #702459;
   }
 
+  .md\:text-score {
+    color: hsl(229, 64%, 46%);
+  }
+
+  .md\:text-dark {
+    color: hsl(229, 25%, 31%);
+  }
+
   .md\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -28318,6 +28858,14 @@ video {
 
   .md\:hover\:text-pink-900:hover {
     color: #702459;
+  }
+
+  .md\:hover\:text-score:hover {
+    color: hsl(229, 64%, 46%);
+  }
+
+  .md\:hover\:text-dark:hover {
+    color: hsl(229, 25%, 31%);
   }
 
   .md\:focus\:text-transparent:focus {
@@ -28692,6 +29240,14 @@ video {
     color: #702459;
   }
 
+  .md\:focus\:text-score:focus {
+    color: hsl(229, 64%, 46%);
+  }
+
+  .md\:focus\:text-dark:focus {
+    color: hsl(229, 25%, 31%);
+  }
+
   .md\:text-xs {
     font-size: 0.75rem;
   }
@@ -28730,6 +29286,10 @@ video {
 
   .md\:text-6xl {
     font-size: 4rem;
+  }
+
+  .md\:text-7xl {
+    font-size: 5rem;
   }
 
   .md\:italic {
@@ -28975,6 +29535,10 @@ video {
 
   .md\:w-40 {
     width: 10rem;
+  }
+
+  .md\:w-44 {
+    width: 11rem;
   }
 
   .md\:w-48 {
@@ -31526,6 +32090,154 @@ video {
   .md\:duration-1000 {
     transition-duration: 1000ms;
   }
+
+  .md\:bg-none {
+    background-image: none;
+  }
+
+  .md\:bg-radial-background {
+    background-image: radial-gradient(, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .md\:bg-radial-t-background {
+    background-image: radial-gradient( at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .md\:bg-radial-tr-background {
+    background-image: radial-gradient( at top right, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .md\:bg-radial-r-background {
+    background-image: radial-gradient( at right, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .md\:bg-radial-br-background {
+    background-image: radial-gradient( at bottom right, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .md\:bg-radial-b-background {
+    background-image: radial-gradient( at bottom, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .md\:bg-radial-bl-background {
+    background-image: radial-gradient( at bottom left, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .md\:bg-radial-l-background {
+    background-image: radial-gradient( at left, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .md\:bg-radial-tl-background {
+    background-image: radial-gradient( at top left, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .md\:bg-radial-paper {
+    background-image: radial-gradient(, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .md\:bg-radial-t-paper {
+    background-image: radial-gradient( at top, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .md\:bg-radial-tr-paper {
+    background-image: radial-gradient( at top right, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .md\:bg-radial-r-paper {
+    background-image: radial-gradient( at right, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .md\:bg-radial-br-paper {
+    background-image: radial-gradient( at bottom right, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .md\:bg-radial-b-paper {
+    background-image: radial-gradient( at bottom, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .md\:bg-radial-bl-paper {
+    background-image: radial-gradient( at bottom left, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .md\:bg-radial-l-paper {
+    background-image: radial-gradient( at left, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .md\:bg-radial-tl-paper {
+    background-image: radial-gradient( at top left, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .md\:bg-radial-scissors {
+    background-image: radial-gradient(, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .md\:bg-radial-t-scissors {
+    background-image: radial-gradient( at top, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .md\:bg-radial-tr-scissors {
+    background-image: radial-gradient( at top right, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .md\:bg-radial-r-scissors {
+    background-image: radial-gradient( at right, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .md\:bg-radial-br-scissors {
+    background-image: radial-gradient( at bottom right, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .md\:bg-radial-b-scissors {
+    background-image: radial-gradient( at bottom, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .md\:bg-radial-bl-scissors {
+    background-image: radial-gradient( at bottom left, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .md\:bg-radial-l-scissors {
+    background-image: radial-gradient( at left, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .md\:bg-radial-tl-scissors {
+    background-image: radial-gradient( at top left, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .md\:bg-radial-rock {
+    background-image: radial-gradient(, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .md\:bg-radial-t-rock {
+    background-image: radial-gradient( at top, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .md\:bg-radial-tr-rock {
+    background-image: radial-gradient( at top right, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .md\:bg-radial-r-rock {
+    background-image: radial-gradient( at right, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .md\:bg-radial-br-rock {
+    background-image: radial-gradient( at bottom right, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .md\:bg-radial-b-rock {
+    background-image: radial-gradient( at bottom, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .md\:bg-radial-bl-rock {
+    background-image: radial-gradient( at bottom left, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .md\:bg-radial-l-rock {
+    background-image: radial-gradient( at left, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .md\:bg-radial-tl-rock {
+    background-image: radial-gradient( at top left, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
 }
 
 @media (min-width: 1024px) {
@@ -33161,6 +33873,10 @@ video {
     border-color: #702459;
   }
 
+  .lg\:border-header {
+    border-color: hsl(217, 16%, 45%);
+  }
+
   .lg\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -33531,6 +34247,10 @@ video {
 
   .lg\:hover\:border-pink-900:hover {
     border-color: #702459;
+  }
+
+  .lg\:hover\:border-header:hover {
+    border-color: hsl(217, 16%, 45%);
   }
 
   .lg\:focus\:border-transparent:focus {
@@ -33905,6 +34625,10 @@ video {
     border-color: #702459;
   }
 
+  .lg\:focus\:border-header:focus {
+    border-color: hsl(217, 16%, 45%);
+  }
+
   .lg\:rounded-none {
     border-radius: 0;
   }
@@ -33923,6 +34647,10 @@ video {
 
   .lg\:rounded-lg {
     border-radius: 0.5rem;
+  }
+
+  .lg\:rounded-xl {
+    border-radius: 1rem;
   }
 
   .lg\:rounded-full {
@@ -34029,6 +34757,26 @@ video {
     border-bottom-left-radius: 0.5rem;
   }
 
+  .lg\:rounded-t-xl {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .lg\:rounded-r-xl {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  .lg\:rounded-b-xl {
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .lg\:rounded-l-xl {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
   .lg\:rounded-t-full {
     border-top-left-radius: 9999px;
     border-top-right-radius: 9999px;
@@ -34127,6 +34875,22 @@ video {
 
   .lg\:rounded-bl-lg {
     border-bottom-left-radius: 0.5rem;
+  }
+
+  .lg\:rounded-tl-xl {
+    border-top-left-radius: 1rem;
+  }
+
+  .lg\:rounded-tr-xl {
+    border-top-right-radius: 1rem;
+  }
+
+  .lg\:rounded-br-xl {
+    border-bottom-right-radius: 1rem;
+  }
+
+  .lg\:rounded-bl-xl {
+    border-bottom-left-radius: 1rem;
   }
 
   .lg\:rounded-tl-full {
@@ -34777,6 +35541,10 @@ video {
 
   .lg\:h-40 {
     height: 10rem;
+  }
+
+  .lg\:h-44 {
+    height: 11rem;
   }
 
   .lg\:h-48 {
@@ -38256,6 +39024,14 @@ video {
     color: #702459;
   }
 
+  .lg\:text-score {
+    color: hsl(229, 64%, 46%);
+  }
+
+  .lg\:text-dark {
+    color: hsl(229, 25%, 31%);
+  }
+
   .lg\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -38626,6 +39402,14 @@ video {
 
   .lg\:hover\:text-pink-900:hover {
     color: #702459;
+  }
+
+  .lg\:hover\:text-score:hover {
+    color: hsl(229, 64%, 46%);
+  }
+
+  .lg\:hover\:text-dark:hover {
+    color: hsl(229, 25%, 31%);
   }
 
   .lg\:focus\:text-transparent:focus {
@@ -39000,6 +39784,14 @@ video {
     color: #702459;
   }
 
+  .lg\:focus\:text-score:focus {
+    color: hsl(229, 64%, 46%);
+  }
+
+  .lg\:focus\:text-dark:focus {
+    color: hsl(229, 25%, 31%);
+  }
+
   .lg\:text-xs {
     font-size: 0.75rem;
   }
@@ -39038,6 +39830,10 @@ video {
 
   .lg\:text-6xl {
     font-size: 4rem;
+  }
+
+  .lg\:text-7xl {
+    font-size: 5rem;
   }
 
   .lg\:italic {
@@ -39283,6 +40079,10 @@ video {
 
   .lg\:w-40 {
     width: 10rem;
+  }
+
+  .lg\:w-44 {
+    width: 11rem;
   }
 
   .lg\:w-48 {
@@ -41834,6 +42634,154 @@ video {
   .lg\:duration-1000 {
     transition-duration: 1000ms;
   }
+
+  .lg\:bg-none {
+    background-image: none;
+  }
+
+  .lg\:bg-radial-background {
+    background-image: radial-gradient(, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .lg\:bg-radial-t-background {
+    background-image: radial-gradient( at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .lg\:bg-radial-tr-background {
+    background-image: radial-gradient( at top right, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .lg\:bg-radial-r-background {
+    background-image: radial-gradient( at right, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .lg\:bg-radial-br-background {
+    background-image: radial-gradient( at bottom right, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .lg\:bg-radial-b-background {
+    background-image: radial-gradient( at bottom, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .lg\:bg-radial-bl-background {
+    background-image: radial-gradient( at bottom left, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .lg\:bg-radial-l-background {
+    background-image: radial-gradient( at left, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .lg\:bg-radial-tl-background {
+    background-image: radial-gradient( at top left, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .lg\:bg-radial-paper {
+    background-image: radial-gradient(, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .lg\:bg-radial-t-paper {
+    background-image: radial-gradient( at top, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .lg\:bg-radial-tr-paper {
+    background-image: radial-gradient( at top right, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .lg\:bg-radial-r-paper {
+    background-image: radial-gradient( at right, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .lg\:bg-radial-br-paper {
+    background-image: radial-gradient( at bottom right, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .lg\:bg-radial-b-paper {
+    background-image: radial-gradient( at bottom, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .lg\:bg-radial-bl-paper {
+    background-image: radial-gradient( at bottom left, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .lg\:bg-radial-l-paper {
+    background-image: radial-gradient( at left, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .lg\:bg-radial-tl-paper {
+    background-image: radial-gradient( at top left, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .lg\:bg-radial-scissors {
+    background-image: radial-gradient(, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .lg\:bg-radial-t-scissors {
+    background-image: radial-gradient( at top, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .lg\:bg-radial-tr-scissors {
+    background-image: radial-gradient( at top right, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .lg\:bg-radial-r-scissors {
+    background-image: radial-gradient( at right, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .lg\:bg-radial-br-scissors {
+    background-image: radial-gradient( at bottom right, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .lg\:bg-radial-b-scissors {
+    background-image: radial-gradient( at bottom, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .lg\:bg-radial-bl-scissors {
+    background-image: radial-gradient( at bottom left, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .lg\:bg-radial-l-scissors {
+    background-image: radial-gradient( at left, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .lg\:bg-radial-tl-scissors {
+    background-image: radial-gradient( at top left, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .lg\:bg-radial-rock {
+    background-image: radial-gradient(, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .lg\:bg-radial-t-rock {
+    background-image: radial-gradient( at top, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .lg\:bg-radial-tr-rock {
+    background-image: radial-gradient( at top right, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .lg\:bg-radial-r-rock {
+    background-image: radial-gradient( at right, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .lg\:bg-radial-br-rock {
+    background-image: radial-gradient( at bottom right, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .lg\:bg-radial-b-rock {
+    background-image: radial-gradient( at bottom, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .lg\:bg-radial-bl-rock {
+    background-image: radial-gradient( at bottom left, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .lg\:bg-radial-l-rock {
+    background-image: radial-gradient( at left, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .lg\:bg-radial-tl-rock {
+    background-image: radial-gradient( at top left, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
 }
 
 @media (min-width: 1280px) {
@@ -43469,6 +44417,10 @@ video {
     border-color: #702459;
   }
 
+  .xl\:border-header {
+    border-color: hsl(217, 16%, 45%);
+  }
+
   .xl\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -43839,6 +44791,10 @@ video {
 
   .xl\:hover\:border-pink-900:hover {
     border-color: #702459;
+  }
+
+  .xl\:hover\:border-header:hover {
+    border-color: hsl(217, 16%, 45%);
   }
 
   .xl\:focus\:border-transparent:focus {
@@ -44213,6 +45169,10 @@ video {
     border-color: #702459;
   }
 
+  .xl\:focus\:border-header:focus {
+    border-color: hsl(217, 16%, 45%);
+  }
+
   .xl\:rounded-none {
     border-radius: 0;
   }
@@ -44231,6 +45191,10 @@ video {
 
   .xl\:rounded-lg {
     border-radius: 0.5rem;
+  }
+
+  .xl\:rounded-xl {
+    border-radius: 1rem;
   }
 
   .xl\:rounded-full {
@@ -44337,6 +45301,26 @@ video {
     border-bottom-left-radius: 0.5rem;
   }
 
+  .xl\:rounded-t-xl {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .xl\:rounded-r-xl {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  .xl\:rounded-b-xl {
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .xl\:rounded-l-xl {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
   .xl\:rounded-t-full {
     border-top-left-radius: 9999px;
     border-top-right-radius: 9999px;
@@ -44435,6 +45419,22 @@ video {
 
   .xl\:rounded-bl-lg {
     border-bottom-left-radius: 0.5rem;
+  }
+
+  .xl\:rounded-tl-xl {
+    border-top-left-radius: 1rem;
+  }
+
+  .xl\:rounded-tr-xl {
+    border-top-right-radius: 1rem;
+  }
+
+  .xl\:rounded-br-xl {
+    border-bottom-right-radius: 1rem;
+  }
+
+  .xl\:rounded-bl-xl {
+    border-bottom-left-radius: 1rem;
   }
 
   .xl\:rounded-tl-full {
@@ -45085,6 +46085,10 @@ video {
 
   .xl\:h-40 {
     height: 10rem;
+  }
+
+  .xl\:h-44 {
+    height: 11rem;
   }
 
   .xl\:h-48 {
@@ -48564,6 +49568,14 @@ video {
     color: #702459;
   }
 
+  .xl\:text-score {
+    color: hsl(229, 64%, 46%);
+  }
+
+  .xl\:text-dark {
+    color: hsl(229, 25%, 31%);
+  }
+
   .xl\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -48934,6 +49946,14 @@ video {
 
   .xl\:hover\:text-pink-900:hover {
     color: #702459;
+  }
+
+  .xl\:hover\:text-score:hover {
+    color: hsl(229, 64%, 46%);
+  }
+
+  .xl\:hover\:text-dark:hover {
+    color: hsl(229, 25%, 31%);
   }
 
   .xl\:focus\:text-transparent:focus {
@@ -49308,6 +50328,14 @@ video {
     color: #702459;
   }
 
+  .xl\:focus\:text-score:focus {
+    color: hsl(229, 64%, 46%);
+  }
+
+  .xl\:focus\:text-dark:focus {
+    color: hsl(229, 25%, 31%);
+  }
+
   .xl\:text-xs {
     font-size: 0.75rem;
   }
@@ -49346,6 +50374,10 @@ video {
 
   .xl\:text-6xl {
     font-size: 4rem;
+  }
+
+  .xl\:text-7xl {
+    font-size: 5rem;
   }
 
   .xl\:italic {
@@ -49591,6 +50623,10 @@ video {
 
   .xl\:w-40 {
     width: 10rem;
+  }
+
+  .xl\:w-44 {
+    width: 11rem;
   }
 
   .xl\:w-48 {
@@ -52141,5 +53177,153 @@ video {
 
   .xl\:duration-1000 {
     transition-duration: 1000ms;
+  }
+
+  .xl\:bg-none {
+    background-image: none;
+  }
+
+  .xl\:bg-radial-background {
+    background-image: radial-gradient(, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .xl\:bg-radial-t-background {
+    background-image: radial-gradient( at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .xl\:bg-radial-tr-background {
+    background-image: radial-gradient( at top right, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .xl\:bg-radial-r-background {
+    background-image: radial-gradient( at right, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .xl\:bg-radial-br-background {
+    background-image: radial-gradient( at bottom right, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .xl\:bg-radial-b-background {
+    background-image: radial-gradient( at bottom, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .xl\:bg-radial-bl-background {
+    background-image: radial-gradient( at bottom left, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .xl\:bg-radial-l-background {
+    background-image: radial-gradient( at left, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .xl\:bg-radial-tl-background {
+    background-image: radial-gradient( at top left, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  }
+
+  .xl\:bg-radial-paper {
+    background-image: radial-gradient(, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .xl\:bg-radial-t-paper {
+    background-image: radial-gradient( at top, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .xl\:bg-radial-tr-paper {
+    background-image: radial-gradient( at top right, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .xl\:bg-radial-r-paper {
+    background-image: radial-gradient( at right, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .xl\:bg-radial-br-paper {
+    background-image: radial-gradient( at bottom right, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .xl\:bg-radial-b-paper {
+    background-image: radial-gradient( at bottom, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .xl\:bg-radial-bl-paper {
+    background-image: radial-gradient( at bottom left, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .xl\:bg-radial-l-paper {
+    background-image: radial-gradient( at left, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .xl\:bg-radial-tl-paper {
+    background-image: radial-gradient( at top left, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  }
+
+  .xl\:bg-radial-scissors {
+    background-image: radial-gradient(, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .xl\:bg-radial-t-scissors {
+    background-image: radial-gradient( at top, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .xl\:bg-radial-tr-scissors {
+    background-image: radial-gradient( at top right, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .xl\:bg-radial-r-scissors {
+    background-image: radial-gradient( at right, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .xl\:bg-radial-br-scissors {
+    background-image: radial-gradient( at bottom right, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .xl\:bg-radial-b-scissors {
+    background-image: radial-gradient( at bottom, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .xl\:bg-radial-bl-scissors {
+    background-image: radial-gradient( at bottom left, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .xl\:bg-radial-l-scissors {
+    background-image: radial-gradient( at left, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .xl\:bg-radial-tl-scissors {
+    background-image: radial-gradient( at top left, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  }
+
+  .xl\:bg-radial-rock {
+    background-image: radial-gradient(, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .xl\:bg-radial-t-rock {
+    background-image: radial-gradient( at top, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .xl\:bg-radial-tr-rock {
+    background-image: radial-gradient( at top right, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .xl\:bg-radial-r-rock {
+    background-image: radial-gradient( at right, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .xl\:bg-radial-br-rock {
+    background-image: radial-gradient( at bottom right, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .xl\:bg-radial-b-rock {
+    background-image: radial-gradient( at bottom, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .xl\:bg-radial-bl-rock {
+    background-image: radial-gradient( at bottom left, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .xl\:bg-radial-l-rock {
+    background-image: radial-gradient( at left, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  }
+
+  .xl\:bg-radial-tl-rock {
+    background-image: radial-gradient( at top left, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
   }
 }
