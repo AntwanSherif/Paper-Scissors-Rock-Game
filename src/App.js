@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
+import ShapesContainer from './containers/ShapesContainer';
 
 function App() {
+  const [score, setScore] = useState(0);
+
   return (
     <div className='min-h-screen pt-16 flex flex-col items-center bg-radial-t-background'>
-      <Header />
+      <Header score={score} />
+
+      <ShapesContainer />
 
       {/**
       <footer className='app-footer'>

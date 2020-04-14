@@ -176,7 +176,10 @@ module.exports = {
     borderColor: theme => ({
       ...theme('colors'),
       default: theme('colors.gray.300', 'currentColor'),
-      header: 'hsl(217, 16%, 45%)'
+      header: 'hsl(217, 16%, 45%)',
+      paper: 'hsl(230, 89%, 65%)',
+      scissors: 'hsl(39, 89%, 53%)',
+      rock: 'hsl(349, 71%, 56%)',
     }),
     borderRadius: {
       none: '0',
@@ -193,6 +196,7 @@ module.exports = {
       '2': '2px',
       '4': '4px',
       '8': '8px',
+      '20': '20px'
     },
     boxShadow: {
       xs: '0 0 0 1px rgba(0, 0, 0, 0.05)',
@@ -203,6 +207,9 @@ module.exports = {
       xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
       '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+      paper: '1px 8px 0px -1px hsl(230, 89%, 62%), inset 0 9px 4px 0 rgba(0, 0, 0, 0.18)',
+      scissors: '1px 8px 0px -1px hsl(39, 89%, 49%), inset 0 9px 4px 0 rgba(0, 0, 0, 0.18)',
+      rock: '1px 8px 0px -1px hsl(349, 71%, 52%), inset 0 9px 4px 0 rgba(0, 0, 0, 0.18)',
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
       none: 'none',
     },
@@ -287,6 +294,11 @@ module.exports = {
     inset: {
       '0': '0',
       auto: 'auto',
+      '-16': '-4rem',
+      '-20': '-5rem',
+      '-24': '-6rem',
+      '0.875': '3.5rem',
+      '9': '9rem'
     },
     letterSpacing: {
       tighter: '-0.05em',
