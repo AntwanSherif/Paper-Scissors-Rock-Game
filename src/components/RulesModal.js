@@ -12,7 +12,7 @@ export default function RulesModal({ className }) {
     return (
         <>
             <Button outlined className={className} onClick={openModal}>
-                RULES
+                <span className='uppercase flex items-center justify-center'>Rules</span>
             </Button>
 
             <Modal open={isModalOpen} title='RULES' closeModal={closeModal}>

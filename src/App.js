@@ -1,26 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
+import { Router, navigate } from "@reach/router"
 import Header from './components/Header';
-import ShapesContainer from './containers/ShapesContainer';
 import RulesModal from './components/RulesModal';
+import StartScreen from './pages/StartScreen';
+import GamePlay from './pages/GamePlay';
 
 function App() {
   const [score, setScore] = useState(0);
+  const [userSelectedControl, setUserSelectedControl] = useState(null);
+
+  const increaseScore = useCallback(() => setScore(prev => prev + 1), []);
+  const decreaseScore = useCallback(() => setScore(prev => prev - 1), []);
+
+  const handleSelection = useCallback(selection => {
+    setUserSelectedControl(selection);
+    // navigate to GamePlay screen
+    navigate(`/game/${selection}`);
+  }, []);
+
 
   return (
     <div className='min-h-screen pt-16 flex flex-col items-center bg-radial-t-background'>
       <Header score={score} />
 
-      <ShapesContainer />
-      <RulesModal className='absolute right-3 bottom-3' />
+      <Router className='flex flex-1 items-center'>
+        <StartScreen path='/' onSelect={handleSelection} />
+        <GamePlay path='/game/:userSelection' onWin={increaseScore} onLose={decreaseScore} />
+      </Router>
 
-      {/**
-      <footer className='app-footer'>
-        <div className="attribution">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>.
-          Coded by <a href="#">Antwan Sherif</a>.
-        </div>
-      </footer>
-       */}
+
+      <div className='w-full flex justify-end mb-6 mr-10'>
+        <RulesModal />
+      </div>
     </div>
   );
 }

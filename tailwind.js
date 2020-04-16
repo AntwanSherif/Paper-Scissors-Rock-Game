@@ -152,9 +152,14 @@ module.exports = {
       '24': '6rem',
       '32': '8rem',
       '40': '10rem',
+      '44': '11rem',
       '48': '12rem',
+      '52': '13rem',
       '56': '14rem',
       '64': '16rem',
+      '72': '18rem',
+      '80': '20rem',
+      96: '24rem'
     },
     backgroundColor: theme => theme('colors'),
     backgroundPosition: {
@@ -196,7 +201,8 @@ module.exports = {
       '2': '2px',
       '4': '4px',
       '8': '8px',
-      '20': '20px'
+      '20': '20px',
+      '28': '28px'
     },
     boxShadow: {
       xs: '0 0 0 1px rgba(0, 0, 0, 0.05)',
@@ -287,8 +293,6 @@ module.exports = {
     height: theme => ({
       auto: 'auto',
       ...theme('spacing'),
-      44: '11rem',
-      96: '24rem',
       full: '100%',
       screen: '100vh',
     }),
@@ -298,9 +302,9 @@ module.exports = {
       '-16': '-4rem',
       '-20': '-5rem',
       '-24': '-6rem',
-      '3': '3rem',
-      '3.5': '3.5rem',
-      '9': '9rem'
+      '12': '3rem',
+      '14': '3.5rem',
+      '40': '10rem'
     },
     letterSpacing: {
       tighter: '-0.05em',
@@ -417,7 +421,6 @@ module.exports = {
     width: theme => ({
       auto: 'auto',
       ...theme('spacing'),
-      '44': '11rem',
       '1/2': '50%',
       '1/3': '33.333333%',
       '2/3': '66.666667%',
@@ -446,6 +449,7 @@ module.exports = {
       '11/12': '91.666667%',
       full: '100%',
       screen: '100vw',
+      '1/2screen': '50vw',
     }),
     zIndex: {
       auto: 'auto',

@@ -1,6 +1,6 @@
 {
   "name": "paper-scissors-rock",
-  "description": "Paper-Scissors-Rock game built with React & TailwindCSS",
+  "description": "Paper-Scissors-Rock game built with React, React-Pose, Reach-Router & TailwindCSS",
   "author": {
     "name": "Antwan Sherif",
     "email": "antwansherif@gmail.com",
@@ -9,6 +9,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reach/router": "^1.3.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",

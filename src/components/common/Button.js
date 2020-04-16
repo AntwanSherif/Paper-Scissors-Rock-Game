@@ -8,7 +8,7 @@ export default function Button({ outlined, className: additionalClassNames, chil
     return (
         <button
             className={clsx(
-                'border-2 px-12 py-3 rounded-lg tracking-widest focus:outline-none',
+                'h-11 w-32 border-2 px-4 py-2 rounded-lg tracking-widest focus:outline-none',
                 computedClasses,
                 additionalClassNames
             )}
