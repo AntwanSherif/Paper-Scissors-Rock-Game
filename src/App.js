@@ -7,16 +7,12 @@ import GamePlay from './pages/GamePlay';
 
 function App() {
   const [score, setScore] = useState(0);
-  const [userSelectedControl, setUserSelectedControl] = useState(null);
 
   const increaseScore = useCallback(() => setScore(prev => prev + 1), []);
   const decreaseScore = useCallback(() => setScore(prev => prev - 1), []);
 
-  const handleSelection = useCallback(selection => {
-    setUserSelectedControl(selection);
-    // navigate to GamePlay screen
-    navigate(`/game/${selection}`);
-  }, []);
+  // navigate to GamePlay screen
+  const handleSelection = useCallback(selection => navigate(`/game/${selection}`), []);
 
 
   return (

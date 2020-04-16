@@ -450,6 +450,7 @@ module.exports = {
       full: '100%',
       screen: '100vw',
       '1/2screen': '50vw',
+      '3/4screen': '75vw'
     }),
     zIndex: {
       auto: 'auto',

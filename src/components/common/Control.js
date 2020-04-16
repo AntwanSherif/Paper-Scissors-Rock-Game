@@ -1,9 +1,10 @@
 import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
-import PaperIcon from '../assets/icon-paper.svg';
-import ScissorsIcon from '../assets/icon-scissors.svg';
-import RockIcon from '../assets/icon-rock.svg';
+import PaperIcon from '../../assets/icon-paper.svg';
+import ScissorsIcon from '../../assets/icon-scissors.svg';
+import RockIcon from '../../assets/icon-rock.svg';
 import clsx from 'clsx';
+import constants from '../../constants';
 
 const CONTROLS = {
     paper: { icon: PaperIcon, classNames: 'border-paper shadow-paper' },
@@ -14,8 +15,8 @@ const CONTROLS = {
 export default function Control({ type, size, interactive, onSelect, className: additionalClassNames }) {
     const { icon, classNames: colorsClasses } = CONTROLS[type];
     const sizeClasses = useMemo(() => {
-        if(size === 'large') return 'h-72 w-72 border-28'
-        else if (size === 'small') return 'h-52 w-52 border-20'
+        if (size === constants.sizes.large) return 'h-72 w-72 border-28'
+        else if (size === constants.sizes.small) return 'h-52 w-52 border-20'
     }, [size]);
 
 
@@ -36,8 +37,12 @@ export default function Control({ type, size, interactive, onSelect, className: 
 }
 
 Control.propTypes = {
-    type: PropTypes.oneOf(['paper', 'scissors', 'rock']).isRequired,
-    size: PropTypes.oneOf(['small', 'large']).isRequired,
+    type: PropTypes.oneOf([
+        constants.controls.paper,
+        constants.controls.scissors,
+        constants.controls.rock,
+    ]).isRequired,
+    size: PropTypes.oneOf([constants.sizes.small, constants.sizes.large]).isRequired,
     onSelect: PropTypes.func.isRequired,
     className: PropTypes.string
 };

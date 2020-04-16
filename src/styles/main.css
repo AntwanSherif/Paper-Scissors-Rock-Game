@@ -9382,6 +9382,10 @@ body{
   width: 50vw;
 }
 
+.w-3\/4screen {
+  width: 75vw;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -21034,6 +21038,10 @@ body{
 
   .sm\:w-1\/2screen {
     width: 50vw;
+  }
+
+  .sm\:w-3\/4screen {
+    width: 75vw;
   }
 
   .sm\:z-0 {
@@ -32691,6 +32699,10 @@ body{
     width: 50vw;
   }
 
+  .md\:w-3\/4screen {
+    width: 75vw;
+  }
+
   .md\:z-0 {
     z-index: 0;
   }
@@ -44346,6 +44358,10 @@ body{
     width: 50vw;
   }
 
+  .lg\:w-3\/4screen {
+    width: 75vw;
+  }
+
   .lg\:z-0 {
     z-index: 0;
   }
@@ -55999,6 +56015,10 @@ body{
 
   .xl\:w-1\/2screen {
     width: 50vw;
+  }
+
+  .xl\:w-3\/4screen {
+    width: 75vw;
   }
 
   .xl\:z-0 {
