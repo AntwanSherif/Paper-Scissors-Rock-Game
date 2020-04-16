@@ -8,7 +8,7 @@ export default function ShapesContainer({ className: additionalClassNames = '' }
             <div className='relative'>
                 <Control type='paper' className='bg-red absolute -top-24 -left-20' />
                 <Control type='scissors' className='bg-red absolute -top-24 -right-20' />
-                <Control type='rock' className='bg-red absolute top-9 right-0.875' />
+                <Control type='rock' className='bg-red absolute top-9 right-3.5' />
 
                 <img src={Triangle} alt='triangle' />
             </div>

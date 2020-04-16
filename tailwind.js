@@ -288,6 +288,7 @@ module.exports = {
       auto: 'auto',
       ...theme('spacing'),
       44: '11rem',
+      96: '24rem',
       full: '100%',
       screen: '100vh',
     }),
@@ -297,7 +298,8 @@ module.exports = {
       '-16': '-4rem',
       '-20': '-5rem',
       '-24': '-6rem',
-      '0.875': '3.5rem',
+      '3': '3rem',
+      '3.5': '3.5rem',
       '9': '9rem'
     },
     letterSpacing: {

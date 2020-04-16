@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
 import ShapesContainer from './containers/ShapesContainer';
+import RulesModal from './components/RulesModal';
 
 function App() {
   const [score, setScore] = useState(0);
@@ -10,6 +11,7 @@ function App() {
       <Header score={score} />
 
       <ShapesContainer />
+      <RulesModal className='absolute right-3 bottom-3' />
 
       {/**
       <footer className='app-footer'>
