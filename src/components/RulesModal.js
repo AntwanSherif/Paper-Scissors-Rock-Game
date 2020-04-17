@@ -3,7 +3,6 @@ import Button from './common/Button';
 import Modal from './common/Modal';
 import RulesImg from '../assets/rules.svg';
 
-
 export default function RulesModal({ className }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const openModal = () => setIsModalOpen(true);
