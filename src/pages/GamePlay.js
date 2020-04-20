@@ -1,20 +1,35 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { motion, useAnimation } from 'framer-motion';
 import GameResult from '../components/GameResult';
 import GameControl from '../components/GameControl';
 import constants from '../constants';
 
+const controlsArr = Object.keys(constants.controls);    // game controls array
+let index = 0;    // current index of controlArr. Used to animate different controls
+
 export default function GamePlay({ userSelection, onWin, onLose }) {
+    const [randomSelection, setRandomSelection] = useState();
     const [houseSelection, setHouseSelection] = useState();
 
     // pick a random control
     useEffect(() => {
+        // animate different controls
+        const random = setInterval(() => {
+            setRandomSelection(controlsArr[index]);
+            index = index === controlsArr.length -1  ? 0 : index + 1;
+        }, 120);
+
+
+        // pick a random control
         const timer = setTimeout(() => {
-            const availableOptions = Object.keys(constants.controls).filter(c => c !== userSelection);
+            const availableOptions = controlsArr.filter(c => c !== userSelection);
             const newSelection = availableOptions[Math.floor(Math.random() * availableOptions.length)];
 
             setHouseSelection(newSelection);
-        }, 1000);
+
+            clearInterval(random);
+        }, 1500);
 
         return () => {
             clearTimeout(timer);
@@ -45,22 +60,47 @@ export default function GamePlay({ userSelection, onWin, onLose }) {
     }, [userSelection, houseSelection, onWin, onLose]);
 
 
+    // Animations
+    const containerControls = useAnimation();
+    const GameResultControls = useAnimation();
+
+    useEffect(() => {
+        if (gameStatus) {
+            containerControls.start({
+                width: '60vw'
+            });
+
+            GameResultControls.start({
+                scale: 1.2
+            });
+        }
+    }, [containerControls, GameResultControls, gameStatus]);
+
 
     return (
-        <div className='w-1/2screen flex flex-1 items-stretch justify-between'>
+        <motion.div
+            className='w-1/2screen flex flex-1 items-stretch justify-between'
+            animate={containerControls}
+            transition={{ ease: "easeIn", duration: 0.2 }}
+        >
             <div className='w-80 flex items-stretch justify-center order-first'>
                 <GameControl title='You Picked' type={userSelection} />
             </div>
             <div className='w-80 flex items-stretch justify-center order-last'>
-                <GameControl title='The House Picked' type={houseSelection} />
+                <GameControl title='The House Picked' type={houseSelection || randomSelection} />
             </div>
 
             {gameStatus && (
-                <div className='w-48 flex flex-none flex-col items-center justify-center'>
+                <motion.div 
+                    className='w-48 flex flex-none flex-col items-center justify-center'
+                    initial={{ scale:  0 }}
+                    animate={GameResultControls}
+                    transition={{ ease: "easeIn", duration: 0.5 }}
+                >
                     <GameResult status={gameStatus} />
-                </div>
+                </motion.div>
             )}
-        </div>
+        </motion.div>
     )
 }
 
