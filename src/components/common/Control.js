@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
+import { motion } from 'framer-motion';
 import PaperIcon from '../../assets/icon-paper.svg';
 import ScissorsIcon from '../../assets/icon-scissors.svg';
 import RockIcon from '../../assets/icon-rock.svg';
@@ -21,7 +22,8 @@ export default function Control({ type, size, interactive, onSelect, className: 
 
 
     return (
-        <div
+        <motion.div
+            {...interactive && { whileHover: { scale: 1.1 } }}
             className={clsx(
                 'bg-white rounded-full cursor-pointer flex items-center justify-center',
                 interactive ? 'cursor-pointer' : 'cursor-auto',
@@ -32,7 +34,7 @@ export default function Control({ type, size, interactive, onSelect, className: 
             {...interactive && { onClick: () => onSelect(type) }}
         >
             <img src={icon} alt='Rock' className='w-16' />
-        </div>
+        </motion.div>
     )
 }
 
