@@ -3350,6 +3350,14 @@ body{
   border-width: 8px;
 }
 
+.border-12 {
+  border-width: 12px;
+}
+
+.border-14 {
+  border-width: 14px;
+}
+
 .border-20 {
   border-width: 20px;
 }
@@ -3424,6 +3432,38 @@ body{
 
 .border-l-8 {
   border-left-width: 8px;
+}
+
+.border-t-12 {
+  border-top-width: 12px;
+}
+
+.border-r-12 {
+  border-right-width: 12px;
+}
+
+.border-b-12 {
+  border-bottom-width: 12px;
+}
+
+.border-l-12 {
+  border-left-width: 12px;
+}
+
+.border-t-14 {
+  border-top-width: 14px;
+}
+
+.border-r-14 {
+  border-right-width: 14px;
+}
+
+.border-b-14 {
+  border-bottom-width: 14px;
+}
+
+.border-l-14 {
+  border-left-width: 14px;
 }
 
 .border-t-20 {
@@ -7324,6 +7364,27 @@ body{
   left: 0;
 }
 
+.inset-1 {
+  top: 4rem;
+  right: 4rem;
+  bottom: 4rem;
+  left: 4rem;
+}
+
+.inset-2 {
+  top: 8rem;
+  right: 8rem;
+  bottom: 8rem;
+  left: 8rem;
+}
+
+.inset-8 {
+  top: 2rem;
+  right: 2rem;
+  bottom: 2rem;
+  left: 2rem;
+}
+
 .inset-12 {
   top: 3rem;
   right: 3rem;
@@ -7338,6 +7399,13 @@ body{
   left: 3.5rem;
 }
 
+.inset-28 {
+  top: 7rem;
+  right: 7rem;
+  bottom: 7rem;
+  left: 7rem;
+}
+
 .inset-40 {
   top: 10rem;
   right: 10rem;
@@ -7350,6 +7418,27 @@ body{
   right: auto;
   bottom: auto;
   left: auto;
+}
+
+.-inset-0\.25 {
+  top: -1rem;
+  right: -1rem;
+  bottom: -1rem;
+  left: -1rem;
+}
+
+.-inset-0\.5 {
+  top: -2rem;
+  right: -2rem;
+  bottom: -2rem;
+  left: -2rem;
+}
+
+.-inset-12 {
+  top: -3rem;
+  right: -3rem;
+  bottom: -3rem;
+  left: -3rem;
 }
 
 .-inset-16 {
@@ -7383,6 +7472,36 @@ body{
   left: 0;
 }
 
+.inset-y-1 {
+  top: 4rem;
+  bottom: 4rem;
+}
+
+.inset-x-1 {
+  right: 4rem;
+  left: 4rem;
+}
+
+.inset-y-2 {
+  top: 8rem;
+  bottom: 8rem;
+}
+
+.inset-x-2 {
+  right: 8rem;
+  left: 8rem;
+}
+
+.inset-y-8 {
+  top: 2rem;
+  bottom: 2rem;
+}
+
+.inset-x-8 {
+  right: 2rem;
+  left: 2rem;
+}
+
 .inset-y-12 {
   top: 3rem;
   bottom: 3rem;
@@ -7403,6 +7522,16 @@ body{
   left: 3.5rem;
 }
 
+.inset-y-28 {
+  top: 7rem;
+  bottom: 7rem;
+}
+
+.inset-x-28 {
+  right: 7rem;
+  left: 7rem;
+}
+
 .inset-y-40 {
   top: 10rem;
   bottom: 10rem;
@@ -7421,6 +7550,36 @@ body{
 .inset-x-auto {
   right: auto;
   left: auto;
+}
+
+.-inset-y-0\.25 {
+  top: -1rem;
+  bottom: -1rem;
+}
+
+.-inset-x-0\.25 {
+  right: -1rem;
+  left: -1rem;
+}
+
+.-inset-y-0\.5 {
+  top: -2rem;
+  bottom: -2rem;
+}
+
+.-inset-x-0\.5 {
+  right: -2rem;
+  left: -2rem;
+}
+
+.-inset-y-12 {
+  top: -3rem;
+  bottom: -3rem;
+}
+
+.-inset-x-12 {
+  right: -3rem;
+  left: -3rem;
 }
 
 .-inset-y-16 {
@@ -7469,6 +7628,54 @@ body{
   left: 0;
 }
 
+.top-1 {
+  top: 4rem;
+}
+
+.right-1 {
+  right: 4rem;
+}
+
+.bottom-1 {
+  bottom: 4rem;
+}
+
+.left-1 {
+  left: 4rem;
+}
+
+.top-2 {
+  top: 8rem;
+}
+
+.right-2 {
+  right: 8rem;
+}
+
+.bottom-2 {
+  bottom: 8rem;
+}
+
+.left-2 {
+  left: 8rem;
+}
+
+.top-8 {
+  top: 2rem;
+}
+
+.right-8 {
+  right: 2rem;
+}
+
+.bottom-8 {
+  bottom: 2rem;
+}
+
+.left-8 {
+  left: 2rem;
+}
+
 .top-12 {
   top: 3rem;
 }
@@ -7501,6 +7708,22 @@ body{
   left: 3.5rem;
 }
 
+.top-28 {
+  top: 7rem;
+}
+
+.right-28 {
+  right: 7rem;
+}
+
+.bottom-28 {
+  bottom: 7rem;
+}
+
+.left-28 {
+  left: 7rem;
+}
+
 .top-40 {
   top: 10rem;
 }
@@ -7531,6 +7754,54 @@ body{
 
 .left-auto {
   left: auto;
+}
+
+.-top-0\.25 {
+  top: -1rem;
+}
+
+.-right-0\.25 {
+  right: -1rem;
+}
+
+.-bottom-0\.25 {
+  bottom: -1rem;
+}
+
+.-left-0\.25 {
+  left: -1rem;
+}
+
+.-top-0\.5 {
+  top: -2rem;
+}
+
+.-right-0\.5 {
+  right: -2rem;
+}
+
+.-bottom-0\.5 {
+  bottom: -2rem;
+}
+
+.-left-0\.5 {
+  left: -2rem;
+}
+
+.-top-12 {
+  top: -3rem;
+}
+
+.-right-12 {
+  right: -3rem;
+}
+
+.-bottom-12 {
+  bottom: -3rem;
+}
+
+.-left-12 {
+  left: -3rem;
 }
 
 .-top-16 {
@@ -15008,6 +15279,14 @@ body{
     border-width: 8px;
   }
 
+  .sm\:border-12 {
+    border-width: 12px;
+  }
+
+  .sm\:border-14 {
+    border-width: 14px;
+  }
+
   .sm\:border-20 {
     border-width: 20px;
   }
@@ -15082,6 +15361,38 @@ body{
 
   .sm\:border-l-8 {
     border-left-width: 8px;
+  }
+
+  .sm\:border-t-12 {
+    border-top-width: 12px;
+  }
+
+  .sm\:border-r-12 {
+    border-right-width: 12px;
+  }
+
+  .sm\:border-b-12 {
+    border-bottom-width: 12px;
+  }
+
+  .sm\:border-l-12 {
+    border-left-width: 12px;
+  }
+
+  .sm\:border-t-14 {
+    border-top-width: 14px;
+  }
+
+  .sm\:border-r-14 {
+    border-right-width: 14px;
+  }
+
+  .sm\:border-b-14 {
+    border-bottom-width: 14px;
+  }
+
+  .sm\:border-l-14 {
+    border-left-width: 14px;
   }
 
   .sm\:border-t-20 {
@@ -18982,6 +19293,27 @@ body{
     left: 0;
   }
 
+  .sm\:inset-1 {
+    top: 4rem;
+    right: 4rem;
+    bottom: 4rem;
+    left: 4rem;
+  }
+
+  .sm\:inset-2 {
+    top: 8rem;
+    right: 8rem;
+    bottom: 8rem;
+    left: 8rem;
+  }
+
+  .sm\:inset-8 {
+    top: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+    left: 2rem;
+  }
+
   .sm\:inset-12 {
     top: 3rem;
     right: 3rem;
@@ -18996,6 +19328,13 @@ body{
     left: 3.5rem;
   }
 
+  .sm\:inset-28 {
+    top: 7rem;
+    right: 7rem;
+    bottom: 7rem;
+    left: 7rem;
+  }
+
   .sm\:inset-40 {
     top: 10rem;
     right: 10rem;
@@ -19008,6 +19347,27 @@ body{
     right: auto;
     bottom: auto;
     left: auto;
+  }
+
+  .sm\:-inset-0\.25 {
+    top: -1rem;
+    right: -1rem;
+    bottom: -1rem;
+    left: -1rem;
+  }
+
+  .sm\:-inset-0\.5 {
+    top: -2rem;
+    right: -2rem;
+    bottom: -2rem;
+    left: -2rem;
+  }
+
+  .sm\:-inset-12 {
+    top: -3rem;
+    right: -3rem;
+    bottom: -3rem;
+    left: -3rem;
   }
 
   .sm\:-inset-16 {
@@ -19041,6 +19401,36 @@ body{
     left: 0;
   }
 
+  .sm\:inset-y-1 {
+    top: 4rem;
+    bottom: 4rem;
+  }
+
+  .sm\:inset-x-1 {
+    right: 4rem;
+    left: 4rem;
+  }
+
+  .sm\:inset-y-2 {
+    top: 8rem;
+    bottom: 8rem;
+  }
+
+  .sm\:inset-x-2 {
+    right: 8rem;
+    left: 8rem;
+  }
+
+  .sm\:inset-y-8 {
+    top: 2rem;
+    bottom: 2rem;
+  }
+
+  .sm\:inset-x-8 {
+    right: 2rem;
+    left: 2rem;
+  }
+
   .sm\:inset-y-12 {
     top: 3rem;
     bottom: 3rem;
@@ -19061,6 +19451,16 @@ body{
     left: 3.5rem;
   }
 
+  .sm\:inset-y-28 {
+    top: 7rem;
+    bottom: 7rem;
+  }
+
+  .sm\:inset-x-28 {
+    right: 7rem;
+    left: 7rem;
+  }
+
   .sm\:inset-y-40 {
     top: 10rem;
     bottom: 10rem;
@@ -19079,6 +19479,36 @@ body{
   .sm\:inset-x-auto {
     right: auto;
     left: auto;
+  }
+
+  .sm\:-inset-y-0\.25 {
+    top: -1rem;
+    bottom: -1rem;
+  }
+
+  .sm\:-inset-x-0\.25 {
+    right: -1rem;
+    left: -1rem;
+  }
+
+  .sm\:-inset-y-0\.5 {
+    top: -2rem;
+    bottom: -2rem;
+  }
+
+  .sm\:-inset-x-0\.5 {
+    right: -2rem;
+    left: -2rem;
+  }
+
+  .sm\:-inset-y-12 {
+    top: -3rem;
+    bottom: -3rem;
+  }
+
+  .sm\:-inset-x-12 {
+    right: -3rem;
+    left: -3rem;
   }
 
   .sm\:-inset-y-16 {
@@ -19127,6 +19557,54 @@ body{
     left: 0;
   }
 
+  .sm\:top-1 {
+    top: 4rem;
+  }
+
+  .sm\:right-1 {
+    right: 4rem;
+  }
+
+  .sm\:bottom-1 {
+    bottom: 4rem;
+  }
+
+  .sm\:left-1 {
+    left: 4rem;
+  }
+
+  .sm\:top-2 {
+    top: 8rem;
+  }
+
+  .sm\:right-2 {
+    right: 8rem;
+  }
+
+  .sm\:bottom-2 {
+    bottom: 8rem;
+  }
+
+  .sm\:left-2 {
+    left: 8rem;
+  }
+
+  .sm\:top-8 {
+    top: 2rem;
+  }
+
+  .sm\:right-8 {
+    right: 2rem;
+  }
+
+  .sm\:bottom-8 {
+    bottom: 2rem;
+  }
+
+  .sm\:left-8 {
+    left: 2rem;
+  }
+
   .sm\:top-12 {
     top: 3rem;
   }
@@ -19159,6 +19637,22 @@ body{
     left: 3.5rem;
   }
 
+  .sm\:top-28 {
+    top: 7rem;
+  }
+
+  .sm\:right-28 {
+    right: 7rem;
+  }
+
+  .sm\:bottom-28 {
+    bottom: 7rem;
+  }
+
+  .sm\:left-28 {
+    left: 7rem;
+  }
+
   .sm\:top-40 {
     top: 10rem;
   }
@@ -19189,6 +19683,54 @@ body{
 
   .sm\:left-auto {
     left: auto;
+  }
+
+  .sm\:-top-0\.25 {
+    top: -1rem;
+  }
+
+  .sm\:-right-0\.25 {
+    right: -1rem;
+  }
+
+  .sm\:-bottom-0\.25 {
+    bottom: -1rem;
+  }
+
+  .sm\:-left-0\.25 {
+    left: -1rem;
+  }
+
+  .sm\:-top-0\.5 {
+    top: -2rem;
+  }
+
+  .sm\:-right-0\.5 {
+    right: -2rem;
+  }
+
+  .sm\:-bottom-0\.5 {
+    bottom: -2rem;
+  }
+
+  .sm\:-left-0\.5 {
+    left: -2rem;
+  }
+
+  .sm\:-top-12 {
+    top: -3rem;
+  }
+
+  .sm\:-right-12 {
+    right: -3rem;
+  }
+
+  .sm\:-bottom-12 {
+    bottom: -3rem;
+  }
+
+  .sm\:-left-12 {
+    left: -3rem;
   }
 
   .sm\:-top-16 {
@@ -26667,6 +27209,14 @@ body{
     border-width: 8px;
   }
 
+  .md\:border-12 {
+    border-width: 12px;
+  }
+
+  .md\:border-14 {
+    border-width: 14px;
+  }
+
   .md\:border-20 {
     border-width: 20px;
   }
@@ -26741,6 +27291,38 @@ body{
 
   .md\:border-l-8 {
     border-left-width: 8px;
+  }
+
+  .md\:border-t-12 {
+    border-top-width: 12px;
+  }
+
+  .md\:border-r-12 {
+    border-right-width: 12px;
+  }
+
+  .md\:border-b-12 {
+    border-bottom-width: 12px;
+  }
+
+  .md\:border-l-12 {
+    border-left-width: 12px;
+  }
+
+  .md\:border-t-14 {
+    border-top-width: 14px;
+  }
+
+  .md\:border-r-14 {
+    border-right-width: 14px;
+  }
+
+  .md\:border-b-14 {
+    border-bottom-width: 14px;
+  }
+
+  .md\:border-l-14 {
+    border-left-width: 14px;
   }
 
   .md\:border-t-20 {
@@ -30641,6 +31223,27 @@ body{
     left: 0;
   }
 
+  .md\:inset-1 {
+    top: 4rem;
+    right: 4rem;
+    bottom: 4rem;
+    left: 4rem;
+  }
+
+  .md\:inset-2 {
+    top: 8rem;
+    right: 8rem;
+    bottom: 8rem;
+    left: 8rem;
+  }
+
+  .md\:inset-8 {
+    top: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+    left: 2rem;
+  }
+
   .md\:inset-12 {
     top: 3rem;
     right: 3rem;
@@ -30655,6 +31258,13 @@ body{
     left: 3.5rem;
   }
 
+  .md\:inset-28 {
+    top: 7rem;
+    right: 7rem;
+    bottom: 7rem;
+    left: 7rem;
+  }
+
   .md\:inset-40 {
     top: 10rem;
     right: 10rem;
@@ -30667,6 +31277,27 @@ body{
     right: auto;
     bottom: auto;
     left: auto;
+  }
+
+  .md\:-inset-0\.25 {
+    top: -1rem;
+    right: -1rem;
+    bottom: -1rem;
+    left: -1rem;
+  }
+
+  .md\:-inset-0\.5 {
+    top: -2rem;
+    right: -2rem;
+    bottom: -2rem;
+    left: -2rem;
+  }
+
+  .md\:-inset-12 {
+    top: -3rem;
+    right: -3rem;
+    bottom: -3rem;
+    left: -3rem;
   }
 
   .md\:-inset-16 {
@@ -30700,6 +31331,36 @@ body{
     left: 0;
   }
 
+  .md\:inset-y-1 {
+    top: 4rem;
+    bottom: 4rem;
+  }
+
+  .md\:inset-x-1 {
+    right: 4rem;
+    left: 4rem;
+  }
+
+  .md\:inset-y-2 {
+    top: 8rem;
+    bottom: 8rem;
+  }
+
+  .md\:inset-x-2 {
+    right: 8rem;
+    left: 8rem;
+  }
+
+  .md\:inset-y-8 {
+    top: 2rem;
+    bottom: 2rem;
+  }
+
+  .md\:inset-x-8 {
+    right: 2rem;
+    left: 2rem;
+  }
+
   .md\:inset-y-12 {
     top: 3rem;
     bottom: 3rem;
@@ -30720,6 +31381,16 @@ body{
     left: 3.5rem;
   }
 
+  .md\:inset-y-28 {
+    top: 7rem;
+    bottom: 7rem;
+  }
+
+  .md\:inset-x-28 {
+    right: 7rem;
+    left: 7rem;
+  }
+
   .md\:inset-y-40 {
     top: 10rem;
     bottom: 10rem;
@@ -30738,6 +31409,36 @@ body{
   .md\:inset-x-auto {
     right: auto;
     left: auto;
+  }
+
+  .md\:-inset-y-0\.25 {
+    top: -1rem;
+    bottom: -1rem;
+  }
+
+  .md\:-inset-x-0\.25 {
+    right: -1rem;
+    left: -1rem;
+  }
+
+  .md\:-inset-y-0\.5 {
+    top: -2rem;
+    bottom: -2rem;
+  }
+
+  .md\:-inset-x-0\.5 {
+    right: -2rem;
+    left: -2rem;
+  }
+
+  .md\:-inset-y-12 {
+    top: -3rem;
+    bottom: -3rem;
+  }
+
+  .md\:-inset-x-12 {
+    right: -3rem;
+    left: -3rem;
   }
 
   .md\:-inset-y-16 {
@@ -30786,6 +31487,54 @@ body{
     left: 0;
   }
 
+  .md\:top-1 {
+    top: 4rem;
+  }
+
+  .md\:right-1 {
+    right: 4rem;
+  }
+
+  .md\:bottom-1 {
+    bottom: 4rem;
+  }
+
+  .md\:left-1 {
+    left: 4rem;
+  }
+
+  .md\:top-2 {
+    top: 8rem;
+  }
+
+  .md\:right-2 {
+    right: 8rem;
+  }
+
+  .md\:bottom-2 {
+    bottom: 8rem;
+  }
+
+  .md\:left-2 {
+    left: 8rem;
+  }
+
+  .md\:top-8 {
+    top: 2rem;
+  }
+
+  .md\:right-8 {
+    right: 2rem;
+  }
+
+  .md\:bottom-8 {
+    bottom: 2rem;
+  }
+
+  .md\:left-8 {
+    left: 2rem;
+  }
+
   .md\:top-12 {
     top: 3rem;
   }
@@ -30818,6 +31567,22 @@ body{
     left: 3.5rem;
   }
 
+  .md\:top-28 {
+    top: 7rem;
+  }
+
+  .md\:right-28 {
+    right: 7rem;
+  }
+
+  .md\:bottom-28 {
+    bottom: 7rem;
+  }
+
+  .md\:left-28 {
+    left: 7rem;
+  }
+
   .md\:top-40 {
     top: 10rem;
   }
@@ -30848,6 +31613,54 @@ body{
 
   .md\:left-auto {
     left: auto;
+  }
+
+  .md\:-top-0\.25 {
+    top: -1rem;
+  }
+
+  .md\:-right-0\.25 {
+    right: -1rem;
+  }
+
+  .md\:-bottom-0\.25 {
+    bottom: -1rem;
+  }
+
+  .md\:-left-0\.25 {
+    left: -1rem;
+  }
+
+  .md\:-top-0\.5 {
+    top: -2rem;
+  }
+
+  .md\:-right-0\.5 {
+    right: -2rem;
+  }
+
+  .md\:-bottom-0\.5 {
+    bottom: -2rem;
+  }
+
+  .md\:-left-0\.5 {
+    left: -2rem;
+  }
+
+  .md\:-top-12 {
+    top: -3rem;
+  }
+
+  .md\:-right-12 {
+    right: -3rem;
+  }
+
+  .md\:-bottom-12 {
+    bottom: -3rem;
+  }
+
+  .md\:-left-12 {
+    left: -3rem;
   }
 
   .md\:-top-16 {
@@ -38326,6 +39139,14 @@ body{
     border-width: 8px;
   }
 
+  .lg\:border-12 {
+    border-width: 12px;
+  }
+
+  .lg\:border-14 {
+    border-width: 14px;
+  }
+
   .lg\:border-20 {
     border-width: 20px;
   }
@@ -38400,6 +39221,38 @@ body{
 
   .lg\:border-l-8 {
     border-left-width: 8px;
+  }
+
+  .lg\:border-t-12 {
+    border-top-width: 12px;
+  }
+
+  .lg\:border-r-12 {
+    border-right-width: 12px;
+  }
+
+  .lg\:border-b-12 {
+    border-bottom-width: 12px;
+  }
+
+  .lg\:border-l-12 {
+    border-left-width: 12px;
+  }
+
+  .lg\:border-t-14 {
+    border-top-width: 14px;
+  }
+
+  .lg\:border-r-14 {
+    border-right-width: 14px;
+  }
+
+  .lg\:border-b-14 {
+    border-bottom-width: 14px;
+  }
+
+  .lg\:border-l-14 {
+    border-left-width: 14px;
   }
 
   .lg\:border-t-20 {
@@ -42300,6 +43153,27 @@ body{
     left: 0;
   }
 
+  .lg\:inset-1 {
+    top: 4rem;
+    right: 4rem;
+    bottom: 4rem;
+    left: 4rem;
+  }
+
+  .lg\:inset-2 {
+    top: 8rem;
+    right: 8rem;
+    bottom: 8rem;
+    left: 8rem;
+  }
+
+  .lg\:inset-8 {
+    top: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+    left: 2rem;
+  }
+
   .lg\:inset-12 {
     top: 3rem;
     right: 3rem;
@@ -42314,6 +43188,13 @@ body{
     left: 3.5rem;
   }
 
+  .lg\:inset-28 {
+    top: 7rem;
+    right: 7rem;
+    bottom: 7rem;
+    left: 7rem;
+  }
+
   .lg\:inset-40 {
     top: 10rem;
     right: 10rem;
@@ -42326,6 +43207,27 @@ body{
     right: auto;
     bottom: auto;
     left: auto;
+  }
+
+  .lg\:-inset-0\.25 {
+    top: -1rem;
+    right: -1rem;
+    bottom: -1rem;
+    left: -1rem;
+  }
+
+  .lg\:-inset-0\.5 {
+    top: -2rem;
+    right: -2rem;
+    bottom: -2rem;
+    left: -2rem;
+  }
+
+  .lg\:-inset-12 {
+    top: -3rem;
+    right: -3rem;
+    bottom: -3rem;
+    left: -3rem;
   }
 
   .lg\:-inset-16 {
@@ -42359,6 +43261,36 @@ body{
     left: 0;
   }
 
+  .lg\:inset-y-1 {
+    top: 4rem;
+    bottom: 4rem;
+  }
+
+  .lg\:inset-x-1 {
+    right: 4rem;
+    left: 4rem;
+  }
+
+  .lg\:inset-y-2 {
+    top: 8rem;
+    bottom: 8rem;
+  }
+
+  .lg\:inset-x-2 {
+    right: 8rem;
+    left: 8rem;
+  }
+
+  .lg\:inset-y-8 {
+    top: 2rem;
+    bottom: 2rem;
+  }
+
+  .lg\:inset-x-8 {
+    right: 2rem;
+    left: 2rem;
+  }
+
   .lg\:inset-y-12 {
     top: 3rem;
     bottom: 3rem;
@@ -42379,6 +43311,16 @@ body{
     left: 3.5rem;
   }
 
+  .lg\:inset-y-28 {
+    top: 7rem;
+    bottom: 7rem;
+  }
+
+  .lg\:inset-x-28 {
+    right: 7rem;
+    left: 7rem;
+  }
+
   .lg\:inset-y-40 {
     top: 10rem;
     bottom: 10rem;
@@ -42397,6 +43339,36 @@ body{
   .lg\:inset-x-auto {
     right: auto;
     left: auto;
+  }
+
+  .lg\:-inset-y-0\.25 {
+    top: -1rem;
+    bottom: -1rem;
+  }
+
+  .lg\:-inset-x-0\.25 {
+    right: -1rem;
+    left: -1rem;
+  }
+
+  .lg\:-inset-y-0\.5 {
+    top: -2rem;
+    bottom: -2rem;
+  }
+
+  .lg\:-inset-x-0\.5 {
+    right: -2rem;
+    left: -2rem;
+  }
+
+  .lg\:-inset-y-12 {
+    top: -3rem;
+    bottom: -3rem;
+  }
+
+  .lg\:-inset-x-12 {
+    right: -3rem;
+    left: -3rem;
   }
 
   .lg\:-inset-y-16 {
@@ -42445,6 +43417,54 @@ body{
     left: 0;
   }
 
+  .lg\:top-1 {
+    top: 4rem;
+  }
+
+  .lg\:right-1 {
+    right: 4rem;
+  }
+
+  .lg\:bottom-1 {
+    bottom: 4rem;
+  }
+
+  .lg\:left-1 {
+    left: 4rem;
+  }
+
+  .lg\:top-2 {
+    top: 8rem;
+  }
+
+  .lg\:right-2 {
+    right: 8rem;
+  }
+
+  .lg\:bottom-2 {
+    bottom: 8rem;
+  }
+
+  .lg\:left-2 {
+    left: 8rem;
+  }
+
+  .lg\:top-8 {
+    top: 2rem;
+  }
+
+  .lg\:right-8 {
+    right: 2rem;
+  }
+
+  .lg\:bottom-8 {
+    bottom: 2rem;
+  }
+
+  .lg\:left-8 {
+    left: 2rem;
+  }
+
   .lg\:top-12 {
     top: 3rem;
   }
@@ -42477,6 +43497,22 @@ body{
     left: 3.5rem;
   }
 
+  .lg\:top-28 {
+    top: 7rem;
+  }
+
+  .lg\:right-28 {
+    right: 7rem;
+  }
+
+  .lg\:bottom-28 {
+    bottom: 7rem;
+  }
+
+  .lg\:left-28 {
+    left: 7rem;
+  }
+
   .lg\:top-40 {
     top: 10rem;
   }
@@ -42507,6 +43543,54 @@ body{
 
   .lg\:left-auto {
     left: auto;
+  }
+
+  .lg\:-top-0\.25 {
+    top: -1rem;
+  }
+
+  .lg\:-right-0\.25 {
+    right: -1rem;
+  }
+
+  .lg\:-bottom-0\.25 {
+    bottom: -1rem;
+  }
+
+  .lg\:-left-0\.25 {
+    left: -1rem;
+  }
+
+  .lg\:-top-0\.5 {
+    top: -2rem;
+  }
+
+  .lg\:-right-0\.5 {
+    right: -2rem;
+  }
+
+  .lg\:-bottom-0\.5 {
+    bottom: -2rem;
+  }
+
+  .lg\:-left-0\.5 {
+    left: -2rem;
+  }
+
+  .lg\:-top-12 {
+    top: -3rem;
+  }
+
+  .lg\:-right-12 {
+    right: -3rem;
+  }
+
+  .lg\:-bottom-12 {
+    bottom: -3rem;
+  }
+
+  .lg\:-left-12 {
+    left: -3rem;
   }
 
   .lg\:-top-16 {
@@ -49985,6 +51069,14 @@ body{
     border-width: 8px;
   }
 
+  .xl\:border-12 {
+    border-width: 12px;
+  }
+
+  .xl\:border-14 {
+    border-width: 14px;
+  }
+
   .xl\:border-20 {
     border-width: 20px;
   }
@@ -50059,6 +51151,38 @@ body{
 
   .xl\:border-l-8 {
     border-left-width: 8px;
+  }
+
+  .xl\:border-t-12 {
+    border-top-width: 12px;
+  }
+
+  .xl\:border-r-12 {
+    border-right-width: 12px;
+  }
+
+  .xl\:border-b-12 {
+    border-bottom-width: 12px;
+  }
+
+  .xl\:border-l-12 {
+    border-left-width: 12px;
+  }
+
+  .xl\:border-t-14 {
+    border-top-width: 14px;
+  }
+
+  .xl\:border-r-14 {
+    border-right-width: 14px;
+  }
+
+  .xl\:border-b-14 {
+    border-bottom-width: 14px;
+  }
+
+  .xl\:border-l-14 {
+    border-left-width: 14px;
   }
 
   .xl\:border-t-20 {
@@ -53959,6 +55083,27 @@ body{
     left: 0;
   }
 
+  .xl\:inset-1 {
+    top: 4rem;
+    right: 4rem;
+    bottom: 4rem;
+    left: 4rem;
+  }
+
+  .xl\:inset-2 {
+    top: 8rem;
+    right: 8rem;
+    bottom: 8rem;
+    left: 8rem;
+  }
+
+  .xl\:inset-8 {
+    top: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+    left: 2rem;
+  }
+
   .xl\:inset-12 {
     top: 3rem;
     right: 3rem;
@@ -53973,6 +55118,13 @@ body{
     left: 3.5rem;
   }
 
+  .xl\:inset-28 {
+    top: 7rem;
+    right: 7rem;
+    bottom: 7rem;
+    left: 7rem;
+  }
+
   .xl\:inset-40 {
     top: 10rem;
     right: 10rem;
@@ -53985,6 +55137,27 @@ body{
     right: auto;
     bottom: auto;
     left: auto;
+  }
+
+  .xl\:-inset-0\.25 {
+    top: -1rem;
+    right: -1rem;
+    bottom: -1rem;
+    left: -1rem;
+  }
+
+  .xl\:-inset-0\.5 {
+    top: -2rem;
+    right: -2rem;
+    bottom: -2rem;
+    left: -2rem;
+  }
+
+  .xl\:-inset-12 {
+    top: -3rem;
+    right: -3rem;
+    bottom: -3rem;
+    left: -3rem;
   }
 
   .xl\:-inset-16 {
@@ -54018,6 +55191,36 @@ body{
     left: 0;
   }
 
+  .xl\:inset-y-1 {
+    top: 4rem;
+    bottom: 4rem;
+  }
+
+  .xl\:inset-x-1 {
+    right: 4rem;
+    left: 4rem;
+  }
+
+  .xl\:inset-y-2 {
+    top: 8rem;
+    bottom: 8rem;
+  }
+
+  .xl\:inset-x-2 {
+    right: 8rem;
+    left: 8rem;
+  }
+
+  .xl\:inset-y-8 {
+    top: 2rem;
+    bottom: 2rem;
+  }
+
+  .xl\:inset-x-8 {
+    right: 2rem;
+    left: 2rem;
+  }
+
   .xl\:inset-y-12 {
     top: 3rem;
     bottom: 3rem;
@@ -54038,6 +55241,16 @@ body{
     left: 3.5rem;
   }
 
+  .xl\:inset-y-28 {
+    top: 7rem;
+    bottom: 7rem;
+  }
+
+  .xl\:inset-x-28 {
+    right: 7rem;
+    left: 7rem;
+  }
+
   .xl\:inset-y-40 {
     top: 10rem;
     bottom: 10rem;
@@ -54056,6 +55269,36 @@ body{
   .xl\:inset-x-auto {
     right: auto;
     left: auto;
+  }
+
+  .xl\:-inset-y-0\.25 {
+    top: -1rem;
+    bottom: -1rem;
+  }
+
+  .xl\:-inset-x-0\.25 {
+    right: -1rem;
+    left: -1rem;
+  }
+
+  .xl\:-inset-y-0\.5 {
+    top: -2rem;
+    bottom: -2rem;
+  }
+
+  .xl\:-inset-x-0\.5 {
+    right: -2rem;
+    left: -2rem;
+  }
+
+  .xl\:-inset-y-12 {
+    top: -3rem;
+    bottom: -3rem;
+  }
+
+  .xl\:-inset-x-12 {
+    right: -3rem;
+    left: -3rem;
   }
 
   .xl\:-inset-y-16 {
@@ -54104,6 +55347,54 @@ body{
     left: 0;
   }
 
+  .xl\:top-1 {
+    top: 4rem;
+  }
+
+  .xl\:right-1 {
+    right: 4rem;
+  }
+
+  .xl\:bottom-1 {
+    bottom: 4rem;
+  }
+
+  .xl\:left-1 {
+    left: 4rem;
+  }
+
+  .xl\:top-2 {
+    top: 8rem;
+  }
+
+  .xl\:right-2 {
+    right: 8rem;
+  }
+
+  .xl\:bottom-2 {
+    bottom: 8rem;
+  }
+
+  .xl\:left-2 {
+    left: 8rem;
+  }
+
+  .xl\:top-8 {
+    top: 2rem;
+  }
+
+  .xl\:right-8 {
+    right: 2rem;
+  }
+
+  .xl\:bottom-8 {
+    bottom: 2rem;
+  }
+
+  .xl\:left-8 {
+    left: 2rem;
+  }
+
   .xl\:top-12 {
     top: 3rem;
   }
@@ -54136,6 +55427,22 @@ body{
     left: 3.5rem;
   }
 
+  .xl\:top-28 {
+    top: 7rem;
+  }
+
+  .xl\:right-28 {
+    right: 7rem;
+  }
+
+  .xl\:bottom-28 {
+    bottom: 7rem;
+  }
+
+  .xl\:left-28 {
+    left: 7rem;
+  }
+
   .xl\:top-40 {
     top: 10rem;
   }
@@ -54166,6 +55473,54 @@ body{
 
   .xl\:left-auto {
     left: auto;
+  }
+
+  .xl\:-top-0\.25 {
+    top: -1rem;
+  }
+
+  .xl\:-right-0\.25 {
+    right: -1rem;
+  }
+
+  .xl\:-bottom-0\.25 {
+    bottom: -1rem;
+  }
+
+  .xl\:-left-0\.25 {
+    left: -1rem;
+  }
+
+  .xl\:-top-0\.5 {
+    top: -2rem;
+  }
+
+  .xl\:-right-0\.5 {
+    right: -2rem;
+  }
+
+  .xl\:-bottom-0\.5 {
+    bottom: -2rem;
+  }
+
+  .xl\:-left-0\.5 {
+    left: -2rem;
+  }
+
+  .xl\:-top-12 {
+    top: -3rem;
+  }
+
+  .xl\:-right-12 {
+    right: -3rem;
+  }
+
+  .xl\:-bottom-12 {
+    bottom: -3rem;
+  }
+
+  .xl\:-left-12 {
+    left: -3rem;
   }
 
   .xl\:-top-16 {
