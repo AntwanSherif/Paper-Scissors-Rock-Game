@@ -3,39 +3,17 @@ import PropTypes from 'prop-types';
 import { motion, useAnimation } from 'framer-motion';
 import GameResult from '../components/GameResult';
 import GameControl from '../components/GameControl';
+import { usePickRandom } from '../hooks/usePickRandom';
 import constants from '../constants';
 
 const controlsArr = Object.keys(constants.controls); // game controls array
-let index = 0; // current index of controlArr. Used to animate different controls
 
 export default function GamePlay({ userSelection, onWin, onLose }) {
-  const [randomSelection, setRandomSelection] = useState();
-  const [houseSelection, setHouseSelection] = useState();
   const isMobile = window.matchMedia('(max-width: 768px)').matches;
-
-  // pick a random control
-  useEffect(() => {
-    // animate different controls
-    const random = setInterval(() => {
-      setRandomSelection(controlsArr[index]);
-      index = index === controlsArr.length - 1 ? 0 : index + 1;
-    }, 120);
-
-    // pick a random control
-    const timer = setTimeout(() => {
-      const availableOptions = controlsArr.filter(c => c !== userSelection);
-      const newSelection = availableOptions[Math.floor(Math.random() * availableOptions.length)];
-
-      setHouseSelection(newSelection);
-
-      clearInterval(random);
-    }, 1500);
-
-    return () => {
-      clearTimeout(timer);
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  const { animatedSelection, houseSelection } = usePickRandom({
+    allControls: controlsArr,
+    userSelection
+  });
 
   // determine current game status
   const [gameStatus, setGameStatus] = useState();
@@ -82,7 +60,7 @@ export default function GamePlay({ userSelection, onWin, onLose }) {
             <GameControl title='You Picked' type={userSelection} />
           </div>
           <div className='w-80 flex items-stretch justify-center'>
-            <GameControl title='The House Picked' type={houseSelection || randomSelection} />
+            <GameControl title='The House Picked' type={houseSelection || animatedSelection} />
           </div>
         </div>
 
@@ -112,7 +90,7 @@ export default function GamePlay({ userSelection, onWin, onLose }) {
         <GameControl title='You Picked' type={userSelection} />
       </div>
       <div className='w-80 flex items-stretch justify-center order-last'>
-        <GameControl title='The House Picked' type={houseSelection || randomSelection} />
+        <GameControl title='The House Picked' type={houseSelection || animatedSelection} />
       </div>
 
       {gameStatus && (
