@@ -51,7 +51,7 @@ export default function GamePlay({ userSelection, onWin, onLose }) {
   if (isMobile) {
     return (
       <motion.div
-        className='w-screen flex flex-1 flex-col'
+        className='w-screen flex flex-1 flex-col items-center gap-40'
         animate={containerControls}
         transition={{ ease: 'easeIn', duration: 0.2 }}
       >
@@ -64,18 +64,16 @@ export default function GamePlay({ userSelection, onWin, onLose }) {
           </div>
         </div>
 
-        {/**
-				{gameStatus && (
-					<motion.div
-						className='w-48 flex flex-none flex-col items-center justify-center'
-						initial={{ scale: 0 }}
-						animate={GameResultControls}
-						transition={{ ease: 'easeIn', duration: 0.5 }}
-					>
-						<GameResult status={gameStatus} />
-					</motion.div>
-                )}
-                 */}
+        {gameStatus && (
+          <motion.div
+            className='w-48 flex flex-none flex-col items-center justify-center'
+            initial={{ scale: 0 }}
+            animate={GameResultControls}
+            transition={{ ease: 'easeIn', duration: 0.5 }}
+          >
+            <GameResult status={gameStatus} size='sm' />
+          </motion.div>
+        )}
       </motion.div>
     );
   }

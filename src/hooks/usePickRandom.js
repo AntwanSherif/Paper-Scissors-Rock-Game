@@ -5,7 +5,6 @@ let index = 0;
 export function usePickRandom({ allControls, userSelection }) {
   const [animatedSelection, setAnimatedSelection] = useState(null);
   const [houseSelection, setHouseSelection] = useState();
-  //   const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const interval = 120;
