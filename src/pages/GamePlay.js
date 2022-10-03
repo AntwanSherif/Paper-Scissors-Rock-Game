@@ -11,14 +11,7 @@ let index = 0; // current index of controlArr. Used to animate different control
 export default function GamePlay({ userSelection, onWin, onLose }) {
   const [randomSelection, setRandomSelection] = useState();
   const [houseSelection, setHouseSelection] = useState();
-  const [isMobile, setIsMobile] = useState(false);
-
-  // listen to screen size
-  useEffect(() => {
-    const updateSize = () => setIsMobile(window.innerWidth < 640);
-    window.addEventListener('resize', updateSize);
-    return () => window.removeEventListener('resize', updateSize);
-  }, []);
+  const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
   // pick a random control
   useEffect(() => {
